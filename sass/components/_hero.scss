@@ -1,36 +1,91 @@
 
 .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-    text-align: center;
-    background-color: var(--background-color-grey);
-    
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 1600px;
+    text-align: center;
+
+    background-color: var(--background-color-grey);
     background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4)),
-    url('../images/Img-hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url('../images/Img-hero.jpg');
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4), 
+                rgba(47, 48, 58, 0.4)),
+                url('../images/img-hero@2x.jpg');
+           }
+
+           @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+
+    // text-align: center;
+    // background-color: var(--background-color-grey);
+    
+    // max-width: 1600px;
+    // height: 600px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // background-image: linear-gradient(
+    // to right,
+    // rgba(47, 48, 58, 0.4), 
+    // rgba(47, 48, 58, 0.4)),
+    // url('../images/Img-hero.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     
         &__title {
-        margin-left: auto;
-        margin-right: auto;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.61;
+            margin-bottom: 30px;
 
-        width: 696px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.4;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--white-text-color);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            
+            color: var(--white-text-color);
+
+            @media screen and (min-width: 1200px) {
+
+                margin-left: auto;
+                margin-right: auto;
+
+                width: 696px;
+                font-size: 44px;
+                line-height: 1.4;
+               } 
+
+        // margin-left: auto;
+        // margin-right: auto;
+
+        // width: 696px;
+        // font-weight: 900;
+        // font-size: 44px;
+        // line-height: 1.4;
+        // text-align: center;
+        // letter-spacing: 0.06em;
+        // text-transform: uppercase;
+        // color: var(--white-text-color);
     }
     
             &__btn {
@@ -41,7 +96,7 @@
             padding-bottom: 9px;
             padding-left: 32px;
             margin: 0;
-            margin-top: 30px;
+            // margin-top: 30px;
 
             font-family: 'Roboto', sans-serif;
             // font-family: $font-family;
@@ -75,6 +130,59 @@
 }
 
 
+
+.menu-button {
+    z-index: 10;
+    display: inline-flex;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        fill: var(--primary-text-color);
+
+        &--cross {
+        display: none;
+        }
+            &:hover,
+            &:focus,
+            &:active {
+                fill: var(--accent-color);
+            }
+    }
+
+    &.is-open {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+    }
+
+    &.is-open .menu-button__icon--cross {
+        display: block;
+    }
+
+    &.is-open .menu-button__icon--menu {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+// .menu-button__icon:hover,
+// .menu-button__icon:focus,
+// .menu-button__icon:active {
+//     fill: var(--accent-color);
+// }
 
 
 

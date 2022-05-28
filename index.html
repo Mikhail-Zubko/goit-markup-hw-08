@@ -25,10 +25,12 @@
     <body>
         <header class="header">
             <div class="container header__container">
-                <nav class="navigation">
-                    <a lang="en" href="./index.html" class="logo header__logo"
+                <a lang="en" href="./index.html" class="logo header__logo"
                         ><span class="logo-blue">Web</span>Studio</a
                     >
+                <div class="nav-container" id="nav-container" >
+                    <nav class="navigation" id="navigation" data menu>
+                        
 
                     <ul class="navigation-list list">
                         <li class="navigation-list__item navigation-list__current"><a class="navigation-list__link navigation-list__link--current" href="./index.html">Студия</a></li>
@@ -50,12 +52,21 @@
                         >
                     </li>
                 </ul>
+                </div>
+
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="navigation" data-menu-button>
+                    <svg  class="menu-button__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use  class="menu-button__icon--menu"  href="./images/symbol-defs.svg#open-mob-menu"></use>
+                        <use class="menu-button__icon--cross"  href="./images/symbol-defs.svg#close-mob-menu" ></use>
+                    </svg>
+                </button>
+                
             </div>
         </header>
         <main>
             <section class="hero-section">
                 <div class="container hero-section__thumb">
-                    <h1 class="hero-section__title list">Эффективные решения для вашего бизнеса</h1>
+                    <h1 class="hero-section__title list">Эффективные решения <br> для вашего бизнеса</h1>
                     <button class="hero-section__btn" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
@@ -547,6 +558,7 @@
         </div>
 
         <script src="./js/modal.js"> </script>
+        <script src="./js/mobile-menu.js"> </script>
 
     </body>
 </html>

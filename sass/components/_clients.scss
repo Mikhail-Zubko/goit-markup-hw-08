@@ -1,30 +1,80 @@
 .clients-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+        @media screen and (min-width: 1200px) {
+            
+            margin-bottom: 50px;
+
+            font-style: normal;
+            font-size: 36px;
+            line-height: 1.16;
+            
+            
+        }
 }
 
 .clients-list {
-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+
 }
 
 .clients-item {
-    margin-right: 30px;
-    
-    width: 170px;
     height: 92px;
     
-        &:last-child {
-            margin-right: 0;
-        }
+    // margin-right: 30px;
     
-}
+    // width: 170px;
+    
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+        
+        @media screen and (max-width: 767px) {
 
+            flex-basis: calc((100% - 30px)/2);
+
+                &:nth-child(odd) {
+                    margin-right: 30px;
+                }
+                &:not(:nth-last-child(-n + 2)) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 60px)/3);
+
+                &:not(:nth-child(3n)) {
+                    margin-right: 30px;
+                }
+                &:not(:nth-last-child(-n + 3)) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 170px;
+
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+}
 
 
 

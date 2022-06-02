@@ -25,10 +25,12 @@
     <body>
         <header class="header">
             <div class="container header__container">
-                <nav class="navigation">
-                    <a lang="en" href="./index.html" class="logo header__logo"
-                        ><span class="logo-blue">Web</span>Studio</a
-                    >
+                <a lang="en" href="./index.html" class="logo header__logo"
+                    ><span class="logo-blue">Web</span>Studio</a
+                >
+                <div class="nav-container" id="nav-container" >
+                    <nav class="navigation" id="navigation" data menu>
+
 
                     <ul class="navigation-list list">
                         <li class="navigation-list__item"><a href="./index.html" class="navigation-list__link">Студия</a></li>
@@ -38,6 +40,7 @@
                         <li class="navigation-list__item"><a href="" class="navigation-list__link">Контакты</a></li>
                     </ul>
                 </nav>
+
                 <ul class="adress list">
                     <li class="adress-list__items">
                         <a href="mailto:info@devstudio.com" class="adress-list__link header__link"
@@ -51,6 +54,15 @@
                         >
                     </li>
                 </ul>
+            </div>
+
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg  class="menu-button__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use  class="menu-button__icon--menu"  href="./images/symbol-defs.svg#open-mob-menu"></use>
+                    <!-- <use class="menu-button__icon--cross"  href="./images/symbol-defs.svg#close-mob-menu" ></use> -->
+                </svg>
+            </button>
+
             </div>
         </header>
         <main>
@@ -366,5 +378,68 @@
             
 
         </footer>
+
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg  class="menu-button__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__icon--cross"  href="./images/symbol-defs.svg#close-mob-menu" ></use>
+                </svg>
+            </button>
+
+            
+            <div class="mobile-menu">
+
+                <ul class="mob-navigation-list list">
+                    <li class="mob-navigation-list__item"><a class="mob-navigation-list__link" href="./index.html">Студия</a></li>
+                    <li class="mob-navigation-list__item navigation-list__current"><a href="./portfolio.html" class="mob-navigation-list__link navigation-list__link--current">Портфолио</a></li>
+                    <li class="mob-navigation-list__item"><a href="" class="mob-navigation-list__link">Контакты</a></li>
+                </ul>
+                
+
+                <ul class="mob-adress list">
+                    <li class="mob-adress-list__items">
+                        <a href="tel:+380961111111" class="mob-adress-list__link phone-number header__link">
+                            <svg class="adress-list__icon list" width="10" height="16"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
+                        </a>
+                    </li>
+
+                    <li class="mob-adress-list__items">
+                        <a href="mailto:info@devstudio.com" class="mob-adress-list__link header__link">
+                            <svg class="adress-list__icon list" width="16" height="12"><use href="./images/symbol-defs.svg#envelope"></use></svg>info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="mob-navigation-social list">
+                    <li class="mob-navigation-social__item">
+                        <a href="" class="mob-navigation-social__link">Instagram</a>
+                    </li>
+                    <li class="mob-navigation-social__item">
+                        <a href="" class="mob-navigation-social__link">Twitter</a>
+                    </li>
+                    <li class="mob-navigation-social__item">
+                        <a href="" class="mob-navigation-social__link">Facebook</a>
+                    </li>
+                    <li class="mob-navigation-social__item">
+                        <a href="" class="mob-navigation-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+        ></script>
+
+        <script src="./js/mobile-menu.js"> </script>
+
     </body>
 </html>

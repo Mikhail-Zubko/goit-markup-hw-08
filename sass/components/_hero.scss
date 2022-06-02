@@ -132,7 +132,7 @@
 
 
 .menu-button {
-    z-index: 10;
+    z-index: 3;
     display: inline-flex;
     margin-left: auto;
     padding: 0;
@@ -148,9 +148,9 @@
         height: 40px;
         fill: var(--primary-text-color);
 
-        &--cross {
-        display: none;
-        }
+        // &--cross {
+        // display: none;
+        // }
 
         &:hover,
         &:focus,
@@ -169,13 +169,13 @@
         display: block;
     }
 
-    &.is-open .menu-button__icon--menu {
-        display: none;
-    }
+    // &.is-open .menu-button__icon--menu {
+    //     display: none;
+    // }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+    // @media screen and (min-width: 768px) {
+    //     display: none;
+    // }
 
 }
 

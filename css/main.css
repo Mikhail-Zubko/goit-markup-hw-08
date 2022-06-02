@@ -565,6 +565,22 @@ body {
   display: block;
 }
 
+.menu-button.is-open .menu-button__icon--menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button__icon:hover,
+.menu-button__icon:focus,
+.menu-button__icon:active {
+  fill: var(--accent-color);
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;

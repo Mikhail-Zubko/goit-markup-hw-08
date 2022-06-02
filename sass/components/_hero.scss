@@ -169,21 +169,21 @@
         display: block;
     }
 
-    // &.is-open .menu-button__icon--menu {
-    //     display: none;
-    // }
+    &.is-open .menu-button__icon--menu {
+        display: none;
+    }
 
-    // @media screen and (min-width: 768px) {
-    //     display: none;
-    // }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
 }
 
-// .menu-button__icon:hover,
-// .menu-button__icon:focus,
-// .menu-button__icon:active {
-//     fill: var(--accent-color);
-// }
+.menu-button__icon:hover,
+.menu-button__icon:focus,
+.menu-button__icon:active {
+    fill: var(--accent-color);
+}
 
 
 

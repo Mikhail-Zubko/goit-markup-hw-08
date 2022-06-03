@@ -145,7 +145,10 @@
                             <div class="activity__thumb">
                                 <img
                                 class="activity__img"
-                                src="./images/img1.jpg"
+
+                                srcset="images/activity/activity-1@2x.jpg 2x" 
+                                src="./images/activity/activity-1.jpg"
+
                                 alt="человек за написанием кода"
                                 width="370"
                             />
@@ -160,7 +163,10 @@
                             <div class="activity__thumb">
                                 <img
                                 class="activity__img"
-                                src="./images/img2.jpg"
+
+                                srcset="/images/activity/activity-2@2x.jpg 2x"
+                                src="./images/activity/activity-2.jpg"
+
                                 alt="телефон в руках у девушки"
                                 width="370"
                             />
@@ -175,7 +181,10 @@
                             <div class="activity__thumb">
                                 <img
                                 class="activity__img"
-                                src="./images/img3.jpg"
+
+                                srcset="images/activity/activity-3@2x.jpg 2x"
+                                src="./images/activity/activity-3.jpg"
+
                                 alt="подбор цвета на планшете"
                                 width="370"
                             />
@@ -194,12 +203,25 @@
                     <h2 class="team__title list">Наша команда</h2>
                     <ul class="team__list list">
                         <li class="team__item list">
-                            <img
-                                class="team__img"
-                                src="./images/command1.jpg"
-                                alt="Игорь Демьяненко в очках с бородой"
-                                width="270"
-                            />
+                            
+                            <picture>
+                                <source
+                                    srcset="./images/team/team-command-1-desktop.jpg 1x, ./images/team/team-command-1-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/team/team-command-1-tablet.jpg 1x, ./images/team/team-command-1-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    srcset="./images/team/team-command-1-mobile.jpg 1x, ./images/team/team-command-1-mobile@2x.jpg 2x"
+                                    alt="Игорь Демьяненко в очках с бородой"
+                                    class="team__img"
+                                    src="./images/team/team-command-1-mobile.jpg"
+                                    width="270"
+                                />
+                            </picture>
+
                             <div class="team__item-text">
                                 <h3 class="team__name list">Игорь Демьяненко</h3>
                                 <p lang="en" class="team__text list">Product Designer</p>
@@ -239,12 +261,25 @@
                         
 
                         <li class="team__item list">
-                            <img
-                                class="team__img"
-                                src="./images/command2.jpg"
-                                alt="Ольга Репина улыбающаяся блондинка в очках"
-                                width="270"
-                            />
+
+                            <picture>
+                                <source
+                                    srcset="./images/team/team-command-2-desktop.jpg 1x, ./images/team/team-command-2-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/team/team-command-2-tablet.jpg 1x, ./images/team/team-command-2-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    srcset="./images/team/team-command-2-mobile.jpg 1x, ./images/team/team-command-2-mobile@2x.jpg 2x"
+                                    alt="Ольга Репина улыбающаяся блондинка в очках"
+                                    class="team__img"
+                                    src="./images/team/team-command-2-mobile.jpg"
+                                    width="270"
+                                />
+                            </picture>
+
                             <div class="team__item-text">
                                 <h3 class="team__name list">Ольга Репина</h3>
                                 <p lang="en" class="team__text list">Frontend Developer</p>
@@ -282,12 +317,25 @@
                         </li>
 
                         <li class="team__item list">
-                            <img
-                                class="team__img"
-                                src="./images/command3.jpg"
-                                alt="Николай Тарасов улыбающийся парень с легкой небритостью"
-                                width="270"
-                            />
+                        
+                            <picture>
+                                <source
+                                    srcset="./images/team/team-command-3-desktop.jpg 1x, ./images/team/team-command-3-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/team/team-command-3-tablet.jpg 1x, ./images/team/team-command-3-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    srcset="./images/team/team-command-3-mobile.jpg 1x, ./images/team/team-command-3-mobile@2x.jpg 2x"
+                                    alt="Николай Тарасов улыбающийся парень с легкой небритостью"
+                                    class="team__img"
+                                    src="./images/team/team-command-3-mobile.jpg"
+                                    width="270"
+                                />
+                            </picture>
+
                             <div class="team__item-text">
                                 <h3 class="team__name list">Николай Тарасов</h3>
                                 <p lang="en" class="team__text list">Marketing</p>
@@ -325,12 +373,25 @@
                         </li>
 
                         <li class="team__item list">
-                            <img
-                                class="team__img"
-                                src="./images/command4.jpg"
-                                alt="Михаил Ермаков парень в очках с бородой и ухмылкой"
-                                width="270"
-                            />
+                            
+                            <picture>
+                                <source
+                                    srcset="./images/team/team-command-4-desktop.jpg  1x, ./images/team/team-command-4-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/team/team-command-4-tablet.jpg 1x, ./images/team/team-command-4-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    srcset="./images/team/team-command-4-mobile.jpg 1x, ./images/team/team-command-4-mobile@2x.jpg 2x"
+                                    alt="Михаил Ермаков парень в очках с бородой и ухмылкой"
+                                    class="team__img"
+                                    src="./images/team/team-command-4-mobile.jpg"
+                                    width="270"
+                                />
+                            </picture>
+
                             <div class="team__item-text">
                                 <h3 class="team__name list">Михаил Ермаков</h3>
                                 <p lang="en" class="team__text list">UI Designer</p>
